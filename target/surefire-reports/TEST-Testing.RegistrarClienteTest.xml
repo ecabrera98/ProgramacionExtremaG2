@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="4" failures="1" name="Testing.RegistrarClienteTest" time="2.599" errors="0" skipped="0">
+<testsuite tests="4" failures="1" name="Testing.RegistrarClienteTest" time="3.823" errors="0" skipped="0">
   <properties>
     <property name="idea.version" value="2020.3.1"/>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
@@ -63,9 +63,9 @@
     <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="Testing.RegistrarClienteTest" name="given_namecliente_when_name_then_ok" time="1.01"/>
-  <testcase classname="Testing.RegistrarClienteTest" name="given_celularcliente_when_celular_not_same" time="0.833"/>
-  <testcase classname="Testing.RegistrarClienteTest" name="given_apellidocliente_when_apellido_then_ok" time="0.756">
+  <testcase classname="Testing.RegistrarClienteTest" name="given_namecliente_when_name_then_ok" time="1.888"/>
+  <testcase classname="Testing.RegistrarClienteTest" name="given_celularcliente_when_celular_not_same" time="1.09"/>
+  <testcase classname="Testing.RegistrarClienteTest" name="given_apellidocliente_when_apellido_then_ok" time="0.839">
     <failure message="expected same:&lt;Cabrera&gt; was not:&lt;Taco&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected same:&lt;Cabrera&gt; was not:&lt;Taco&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotSame(Assert.java:828)
@@ -109,5 +109,5 @@
 Test 3
 </system-out>
   </testcase>
-  <testcase classname="Testing.RegistrarClienteTest" name="given_objPersona_when_then_null" time="0"/>
+  <testcase classname="Testing.RegistrarClienteTest" name="given_objPersona_when_then_null" time="0.006"/>
 </testsuite>

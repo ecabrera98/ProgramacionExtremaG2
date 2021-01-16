@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: Testing.RegistrarCelularParametersTest
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 4.084 sec <<< FAILURE!
-given_parameters_when_celularcliente_then_cliente[0](Testing.RegistrarCelularParametersTest)  Time elapsed: 3.196 sec  <<< FAILURE!
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 2.774 sec <<< FAILURE!
+given_parameters_when_celularcliente_then_cliente[0](Testing.RegistrarCelularParametersTest)  Time elapsed: 1.764 sec  <<< FAILURE!
 org.junit.ComparisonFailure: expected:<0[979025335]> but was:<0[123456789]>
 	at org.junit.Assert.assertEquals(Assert.java:115)
 	at org.junit.Assert.assertEquals(Assert.java:144)

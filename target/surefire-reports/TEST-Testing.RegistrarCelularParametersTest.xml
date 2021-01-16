@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="2" failures="1" name="Testing.RegistrarCelularParametersTest" time="3.975" errors="0" skipped="0">
+<testsuite tests="2" failures="1" name="Testing.RegistrarCelularParametersTest" time="2.688" errors="0" skipped="0">
   <properties>
     <property name="idea.version" value="2020.3.1"/>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
@@ -63,7 +63,7 @@
     <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="Testing.RegistrarCelularParametersTest" name="given_parameters_when_celularcliente_then_cliente[0]" time="3.196">
+  <testcase classname="Testing.RegistrarCelularParametersTest" name="given_parameters_when_celularcliente_then_cliente[0]" time="1.764">
     <failure message="expected:&lt;0[979025335]&gt; but was:&lt;0[123456789]&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: expected:&lt;0[979025335]&gt; but was:&lt;0[123456789]&gt;
 	at org.junit.Assert.assertEquals(Assert.java:115)
 	at org.junit.Assert.assertEquals(Assert.java:144)
@@ -107,5 +107,5 @@
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 </failure>
   </testcase>
-  <testcase classname="Testing.RegistrarCelularParametersTest" name="given_parameters_when_celularcliente_then_cliente[1]" time="0.779"/>
+  <testcase classname="Testing.RegistrarCelularParametersTest" name="given_parameters_when_celularcliente_then_cliente[1]" time="0.924"/>
 </testsuite>
