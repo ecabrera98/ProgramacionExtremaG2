@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: Testing.RegistrarEmailParametersTest
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 1.507 sec <<< FAILURE!
-given_parameters_when_registraremail_then_cliente[1](Testing.RegistrarEmailParametersTest)  Time elapsed: 0.768 sec  <<< FAILURE!
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 1.36 sec <<< FAILURE!
+given_parameters_when_registraremail_then_cliente[1](Testing.RegistrarEmailParametersTest)  Time elapsed: 0.505 sec  <<< FAILURE!
 org.junit.ComparisonFailure: expected:<...oselyn.taco@epn.edu.[ec]> but was:<...oselyn.taco@epn.edu.[com]>
 	at org.junit.Assert.assertEquals(Assert.java:115)
 	at org.junit.Assert.assertEquals(Assert.java:144)
