@@ -26,7 +26,6 @@ public class CompraOnline extends JInternalFrame {
         });
         System.out.println("Proyecto Primer Bimestres Ingenieria de Software");
         System.out.println("Programación Extrema");
-        System.out.println("Edison Cabrera  Joselyn Taco");
 
     }
 
