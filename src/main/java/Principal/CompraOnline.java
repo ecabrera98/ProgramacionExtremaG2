@@ -24,9 +24,9 @@ public class CompraOnline extends JInternalFrame {
                 }
             }
         });
-        System.out.println("Proyecto Primer Bimestres Ingenieria de Software");
-        System.out.println("Programación Extrema");
-        System.out.println("EDISON CABRERA   JOSELYN TACO");
+        //System.out.println("Proyecto Primer Bimestres Ingenieria de Software");
+        //System.out.println("Programación Extrema");
+        //System.out.println("EDISON CABRERA   JOSELYN TACO");
 
     }
 
@@ -114,6 +114,27 @@ public class CompraOnline extends JInternalFrame {
             }
         });
         mnReportes.add(mnCarrito);
+
+        JMenu mnArchMNSesion = new JMenu("Iniciar Secion");
+        menuBar.add(mnArchMNSesion);
+
+        JMenuItem mntmAdministrador= new JMenuItem("Administrador");
+        mntmAdministrador.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent arg0) {
+                Usuario usr = new Usuario();
+                usr.setVisible(true);
+            }
+        });
+        mnArchMNSesion.add(mntmAdministrador);
+
+        JMenuItem mntmCliente= new JMenuItem("Usuario");
+        mntmCliente.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent arg0) {
+                //Principal.Manual objST = new   Principal.Manual();
+                //objST.Manual();
+            }
+        });
+        mnArchMNSesion.add(mntmCliente);
 
         JMenu mnManual = new JMenu("Manual");
         menuBar.add(mnManual);

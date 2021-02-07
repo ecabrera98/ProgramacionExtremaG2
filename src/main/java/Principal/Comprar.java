@@ -45,7 +45,23 @@ public class Comprar {
             System.out.println("Categoria Tecnologia");
             mostrarListaProductos(productsTechnology,productsTechnology.length);
             Producto(3);
+        }else if(val == 8) {
+            System.out.println("Tiendas Registradas\n");
+            System.out.println("\tETAFASHON");
+            System.out.println("Productos disponbles\n");
+            System.out.println("\tCategoria Deportes\n");
+            mostrarListaProductos(productsDeporting,productsDeporting.length);
+            System.out.println("\n\tCategoria Clasicos\n");
+            mostrarListaProductos(productsClassics,productsClassics.length);
+            System.out.println("**********************************************************************************");
+            System.out.println("\tLA GANGA");
+            System.out.println("Productos disponbles\n");
+            System.out.println("\tCategoria Electrodomesticos\n");
+            mostrarListaProductos(productosElectrodomestico,productosElectrodomestico.length);
+            System.out.println("\n\tCategoria Tecnologia\n");
+            mostrarListaProductos(productsTechnology,productsTechnology.length);
         }
+
 
     }
 

@@ -12,7 +12,9 @@ public class RegistrarCliente{
     public RegistrarCliente(){
         System.out.println (prueba);
     }
-
+    public static String [] preferencias = {"Ropa","Comida","Electrodomestico","Tecnologia","Entretenimiento","Servicios"};
+    public static String [] respPrefe = new String[3];
+    public static int intTamaño = 0;
 
     public void Clientes()
     {
@@ -25,6 +27,10 @@ public class RegistrarCliente{
         String strTextoPantalla="";
         boolean bln=false;
 
+        System.out.println("Preferencias");
+        for ( i = 0; i < preferencias.length; i++) {
+            System.out.print(1+i+". "+preferencias[i] + "\n");
+        }
 
         System.out.println("Nombre"+strEspacio.substring(0,8)+"Apellido"+strEspacio.substring(0,8)
                 +"Correo Electrónico"+strEspacio.substring(0,8)+"Teléfono Celular");
@@ -74,9 +80,18 @@ public class RegistrarCliente{
             objPersona.getEmail();
             objPersona.getCelular();
 
+
+            System.out.print("\n");
+
             System.out.print(objPersona);		//mostramos en consola el arreglo generado en la clase bean mediante el metodo tostring
             System.out.println("");
 
+            registrarPreferencias();
+            System.out.println("\nPreferencias del Cliente");
+
+            for ( int x = 0; x < 3; x++) {
+                System.out.print(1+x+". "+respPrefe[x] + "\n");
+            }
 
             // caja de confirmación para que el usuario decida si quiere más operaciones.
             iSiga=JOptionPane.showConfirmDialog(null, "Confirme si desea ingresar nuevos datos");
@@ -169,6 +184,35 @@ public class RegistrarCliente{
 
         } while (blnchitory == false);
         return strAux;
+    }
+
+    public String registrarPreferencias(){
+        String strAux = null;
+
+        for(int i = 0; i < 3; i++){
+            strAux = JOptionPane.showInputDialog("Escoja 3 categorias de su Preferencia\nIngrese la preferencia"+(i+1), null); //pedimos al usuario que ingrese sus preferencias
+            Preferencias(preferencias,strAux);
+
+        }
+
+
+    return strAux;
+    }
+
+    public void Preferencias(String [] matrix,String strAux) {
+        boolean blnchitory=false;
+        String strAuxProd="";
+        do {
+
+            for (int x = 0; x < matrix.length; x++) {
+                    if (matrix[x].equals(strAux)) {
+                        respPrefe[intTamaño]= strAux;
+                        intTamaño = intTamaño +1;
+                        blnchitory = true;
+                        break;
+                    }
+            }
+        } while (blnchitory == false);
     }
 
 
